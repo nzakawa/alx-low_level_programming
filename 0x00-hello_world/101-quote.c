@@ -1,13 +1,14 @@
-#iclude <stdio.h>
-
+#include <stdio.h>
 /**
- * main - Entry point
+ * main - main function
  *
- * Return: Always 0 (Success)
+ * Return: end program
  */
 int main(void)
 {
-	write(2, "and test piece of art is useful\" - Dora Korpar, 2015-10-19\n", 61);
+	char n[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+
+	fprintf(stderr, "%s\n", n);
 
 	return (1);
 }
