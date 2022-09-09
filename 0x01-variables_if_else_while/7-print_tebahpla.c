@@ -9,13 +9,13 @@ int main(void)
 {
 	char l_letter = 122;
 
-	while (l-letter >= 97)
+	while (l_letter >= 97)
 	{
-		putchar(l-letter);
-		l-letter--;
+		putchar(l_letter);
+		l_letter--;
 	}
 
-	purchat('\n');
+	putchat('\n');
 
 	return (0);
 }
