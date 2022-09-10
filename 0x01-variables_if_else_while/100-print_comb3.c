@@ -6,22 +6,17 @@
  */
 int main(void)
 {
-int numA;
-int numB;
-int minB = 48;
-for (numB = 48; numB <= 57; numB++)
+int num1, num2;
+for (num1 = 48; num1 <= 57; num1++)
 {
-if (numA = minB++; numA <= 57; numA++)
+for (num2 = num1 + 1; num2 <= 57; num2++)
 {
-if (numA != numB)
-{
-putchar(numB);
-putchar(numA);
-if (!(numA == 57 && numB == 56))
+putchar(num1);
+putchar(num2);
+if (!(num1 == 56 && num2 == 57))
 {
 putchar(',');
 putchar(' ');
-}
 }
 }
 }
