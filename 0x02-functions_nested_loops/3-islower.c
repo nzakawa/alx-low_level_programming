@@ -1,14 +1,16 @@
-#include "main.h"
+include "main.h"
 
 /**
- * _islower - prints 10 times the alphabet, in lowercase, followed by a new line
- * 
- * Return: Always 0.
+ * _islower - prints fuction that check lowercase
+ *
+ * Return: 1 if lowercase. otherwise 0.
  */
-int _islower(int r)
+int _islower(int x)
 {
-if (r >= 'a' && r <= 'z')
-return (1);
-else
-return (0);
+	if ((x >= 97) && (x <= 122))
+	{
+	return (1);
+	}
+	else
+	return (0);
 }
