@@ -3,7 +3,7 @@
  * main - print 10 times lowercase alphabet
  * Return - void
  */
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 int y;
 int x;
@@ -15,5 +15,5 @@ for (x = 0; x < 10; x++)
 		_putchar(y);
 	}
 	_putchar('\n');
-	}
+}
 }
