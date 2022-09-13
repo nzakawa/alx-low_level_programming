@@ -2,7 +2,7 @@
 
 /**
  * _islower - prints fuction that check lowercase
- * @c: single letter input
+ * @x: single letter input
  * Return: 1 if lowercase. otherwise 0
  */
 int _islower(int x)
