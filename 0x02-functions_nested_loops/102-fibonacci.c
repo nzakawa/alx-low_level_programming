@@ -1,12 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * fibonacci - print 100 fibonacci numners
+ * main - print 100 fibonacci numners
  * Return: Always 0
  */
 int main(void)
 {
 	unsigned long count, x, y, z;
+
 	x = 0;
 	y = 1;
 	for (count = 0; count < 50; count++)
