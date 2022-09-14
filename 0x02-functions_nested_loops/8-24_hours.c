@@ -1,15 +1,12 @@
 #include "main.h"
 /**
  * jack_bauer - function that print every minute of the day
- * @h: hour
- * @m: minute
  * reset m
  * Return: 0
  */
 void jack_bauer(void)
 {
 	int h, m;
-	
 	for (h = 0; h < 24; h++)
 	{
 		for (m = 0; m < 60; h++)
