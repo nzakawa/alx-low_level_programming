@@ -15,6 +15,7 @@ void jack_bauer(void)
 	{
 	while (m <= 59)
 	{
+	m_reminder = m % 10;
 	h_reminder = h % 10;
 	_putchar(h / 10 + '0');
 	_putchar(h_reminder + '0');
