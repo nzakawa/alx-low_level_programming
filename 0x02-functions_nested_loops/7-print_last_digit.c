@@ -6,8 +6,9 @@
  */
 int print_last_digit(int t)
 {
-	input t;
-	t = (t % 10)
+	int t;
+
+	t = (t % 10);
 	if (t < 0)
 	{
 		t = (-1 * t);
