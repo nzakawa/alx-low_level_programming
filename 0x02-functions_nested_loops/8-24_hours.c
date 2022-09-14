@@ -1,41 +1,30 @@
 #include "main.h"
 /**
  * jack_bauer - function that print every minute of the day
- * h = hour, m = minutes
- * / 10 alllows second to ratate
- * Return: 24 hours of clock
+ * h = hour, m = min
+ * Return: 0
  */
 void jack_bauer(void)
 {
-	int h, m;
-	for (h = 0; h < 24; h++)
+	int h = 0;
+	int m = 0;
+	int h_reminder;
+	int m_reminder;
+
+	while (h <= 23)
 	{
-	for (m = 0; m < 60; m++)
+	while (m <= 59)
 	{
-		if (h < 10)
-		{
-			_putchar('0');
-			_putchar(h + '0');
-		}
-		else if (h >= 10)
-		{
-			_putchar((h / 10) + '0');
-			_putchar((h % 10) + '0');
-		}
-		if (m < 10)
-		{
-		_putchar(':');
-		_putchar('0');
-		_putchar(m);
-		}
-		else if (m > 10)
-		{
-			_putchar(':');
-			_putchar((m / 10) + '0');
-			_putchar((m % 10) + '0');
-		}
-	}
+	h_reminder = h % 10;
+	_putchar(h / 10 + '0');
+	_putchar(h_reminder + '0');
+	_putchar(':');
+	_putchar(h / 10 + '0');
+	_putchar(m_reminder + '0');
+	m++;
 	_putchar('\n');
 	}
+	h++;
+	m = 0;
+	}
 }
-
