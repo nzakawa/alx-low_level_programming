@@ -10,7 +10,7 @@ int main(void)
 	y = x;
 	for (count = 0; count < 50; count++)
 	{
-		z = x + j;
+		z = x + y;
 		x = y;
 		y = z;
 		if (z % 2 == 0 && z < 4000000)
@@ -18,7 +18,7 @@ int main(void)
 			sum += z;
 		}
 	}
-	printf("%lu\n", sum)
+	printf("%lu\n", sum);
 		return (0);
 }
 
