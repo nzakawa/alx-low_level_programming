@@ -3,7 +3,7 @@
  * jack_bauer - function that print every minute of the day
  * h = hour, m = minutes
  * / 10 alllows second to ratate
- * Return: 24 hour of the clock 
+ * Return: 24 hours of clock
  */
 void jack_bauer(void)
 {
@@ -11,6 +11,7 @@ void jack_bauer(void)
 	for (h = 0; h < 24; h++)
 	{
 	for (m = 0; m < 60; m++)
+
 	{
 		_putchar((h / 10) + '0');
 		_putchar((h % 10) + '0');
