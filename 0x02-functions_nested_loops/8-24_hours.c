@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  * jack_bauer - function that print every minute of the day
- * h = hour, m = min
+ * @h: hour
+ * @m: minute
  * reset m
  * Return: 0
  */
