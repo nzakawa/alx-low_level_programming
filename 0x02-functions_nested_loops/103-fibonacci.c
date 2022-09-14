@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - sum of fibobanacci up to 4 millions
+ * main - sum of fibobanacci
  * Return: Always 0
  */
 int main(void)
