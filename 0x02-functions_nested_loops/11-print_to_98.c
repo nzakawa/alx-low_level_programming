@@ -20,16 +20,15 @@ void print_t0_98(int n)
 		else
 		printf("%d", n);
 		}
-		else if (n > 98)
-	}
+	} else if (n > 98)
+
 	{
 		for (; n >= 98; --n)
 		{
 			if (n > 98)
 				printf("%d, ", n);
 		}
-	}
-	else 
+	} else 
 	{
 		for (; n <= 98; ++n)
 		{
@@ -39,6 +38,6 @@ void print_t0_98(int n)
 				printf("%d" , n);
 		}
 	}
-	printf('\n');
+	printf("\n");
 }
 
