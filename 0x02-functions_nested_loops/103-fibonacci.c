@@ -6,6 +6,7 @@
 int main(void)
 {
 	unsigned long count, x, y, z, sum;
+
 	x = sum = 0;
 	y = x;
 	for (count = 0; count < 50; count++)
