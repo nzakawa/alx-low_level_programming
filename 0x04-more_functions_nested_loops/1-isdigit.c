@@ -2,7 +2,7 @@
 
 /**
  * _isdigit - function to check for digit
- * @c: integer 
+ * @c: integer character
  *Return: Always 0.
  */
 int _isdigit(int c)
