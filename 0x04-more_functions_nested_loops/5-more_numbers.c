@@ -4,17 +4,25 @@
  * more_numbers - prints more numbers
  * Return: 0
  */
-
 void more_numbers(void)
 {
-	int x, y;
+	char n, c;
+	int i = 0
 
-	for (x = 0; x < 10; x++)
-	{
-		for (y = 0; y < 15; y++)
+		while (i < 10)
 		{
-			_putchary(y + '0);
+		for (n = 0; n <= 14; n++)
+		{
+		c = n;
+		if(n > 9)
+		{
+			_putchar('1');
+			c = n % 10;
+		}
+		_putchar('0' + c);
 		}
 		_putchar('\n');
-	}
+		i++;
+		}
 }
+
