@@ -1,15 +1,16 @@
 #include "main.h"
 /**
- * print_most_numbers - printing more numbers
+ * print_most_numbers - this print must of numbers
+ * Return: 0
  */
-void more_numbers(void)
+void print_most_numbers(void)
 {
-	int y;
+	int n;
 
-	for (y = 0; y < 10; y++)
+	for (n = 0; n < 10; x++)
 	{
-		if (y != 2 && y != 4)
-			_putchar(y + '0');
+		if (n !=2 && n !=4)
+			_putchar(n + '0');
 	}
 	_putchar('\n');
 }
