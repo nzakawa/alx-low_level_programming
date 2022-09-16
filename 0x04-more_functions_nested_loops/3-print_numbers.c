@@ -1,17 +1,15 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
  * print_numbers - printing numbers
- * Return: 0.
+ * Return: 0
  */
 
 void print_numbers(void)
 {
-int z;
-for (z = 48; z < 58; x++)
-{
-putchar(z);
-}
-putchar(10);
+	int n;
+
+	for (n = 0; n < 10; n++)
+		_putchar(n + '0');
+	_putchar('\n');
 }
