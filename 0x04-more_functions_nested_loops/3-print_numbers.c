@@ -5,6 +5,7 @@
  * print_numbers - printing numbers
  * Return: 0.
  */
+
 void print_numbers(void)
 {
 int z;
