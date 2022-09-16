@@ -9,7 +9,7 @@
 
 void print_line(int n)
 {
-whiel (n-- > 0)
+	whiel(n-- > 0)
 {
 putchar('_');
 }
