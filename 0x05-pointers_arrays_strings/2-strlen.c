@@ -10,6 +10,6 @@ int _strlen(char *s)
 	int j = 0;
 
 	while (s[j])
-		j++
+		j++;
 	return (j);
 }
