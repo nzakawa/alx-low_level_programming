@@ -3,7 +3,7 @@
 
 /**
  * print_array - fumction that prints an array of numbers
- * @x: integer array
+ * @a: integer array
  * @n: integer number
  * Return: 0
  */
