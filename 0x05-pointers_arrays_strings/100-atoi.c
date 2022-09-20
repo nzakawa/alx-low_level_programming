@@ -14,10 +14,12 @@ int _atoi(char *s)
 	int rsp = 0;
 
 for (j = 0; !(s[j] >= 48 && s[j] <= 57); j++)
+{
 	if (s[j] == '-')
 	{
-		sig = sig -1;
+	sig *= -1;
 	}
+}
 for (k = j; s[k] >= 48 && s[k] <= 57; k++)
 {
 	rsp = rsp * 10;
