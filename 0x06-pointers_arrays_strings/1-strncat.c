@@ -9,18 +9,16 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-int src_len = 0;
-int j = 0;
-char *pc = dest;
-char *c = src;
+int src_len = 0, j = 0;
+char *pc = dest, *c = src;
+while (*src)
+{
+src_len++;
+src++;
+}
 while (*dest)
 {
 dest++;
-}
-while (*src)
-{
-src++;
-src_len++;
 }
 if (n > src_len)
 {
@@ -29,8 +27,8 @@ n = src_len;
 src = c;
 for (j < n; j++)
 {
-*src++ = *dest++;
+*dest++ = *src++;
 }
-*src = '\0';
-return (c);
+*dest = '\0';
+return (pc);
 }
