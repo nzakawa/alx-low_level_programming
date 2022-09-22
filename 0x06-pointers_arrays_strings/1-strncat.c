@@ -25,7 +25,7 @@ if (n > src_len)
 n = src_len;
 }
 src = c;
-for (j < n; j++)
+for (; j < n; j++)
 {
 *dest++ = *src++;
 }
