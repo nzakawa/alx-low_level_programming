@@ -17,10 +17,6 @@ while (*src)
 src_len++;
 src++;
 }
-while (*dest)
-{
-dest++;
-}
 src_len++;
 if (n > src_len)
 {
@@ -31,7 +27,6 @@ for (; j < n; j++)
 {
 *dest++ = *src++;
 }
-*dest = '\0';
 return (pc);
 }
 
