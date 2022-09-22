@@ -31,6 +31,7 @@ for (; j < n; j++)
 {
 *dest++ = *src++;
 }
+*dest = '\0';
 return (pc);
 }
 
