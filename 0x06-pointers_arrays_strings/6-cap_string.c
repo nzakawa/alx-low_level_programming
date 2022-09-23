@@ -14,7 +14,7 @@ int j = 0;
 
 while (s[j])
 {
-if (j == 0 && ([j] >= 'a' && s[j] <= 'z'))
+if (j == 0 && (s[j] >= 'a' && s[j] <= 'z'))
 {
 s[j] -= 32;
 }
@@ -36,7 +36,7 @@ int check_separators(char c)
 int j = 0;
 
 char separator[13] = {' ', '\t', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}' };
-for (; j <= 13; j++)
+for (; j < 13; j++)
 {
 if (c == separators[j])
 {
