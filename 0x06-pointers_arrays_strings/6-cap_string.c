@@ -10,39 +10,26 @@
 
 char *cap_string(char *s)
 {
-int j = 0;
+	int j = 0;
 
-while (s[j])
-{
-if (j == 0 && (s[j] >= 'a' && s[j] <= 'z'))
-{
-s[j] -= 32;
+	while (s[++j])
+	{
+		while (!(s[j] >= 'a' && s[j] <= 'z'))
+			j++;
+		if (s[j - 1] == ' ' ||
+				s[j - 1] == '\t' ||
+				s[j - 1] == '\n' ||
+				s[j - 1] == ',' ||
+				s[j - 1] == ';' ||
+				s[j - 1] == '.' ||
+				s[j - 1] == '!' ||
+				s[j - 1] == '?' ||
+				s[j - 1] == '"' ||
+				s[j - 1] == '(' ||
+				s[j - 1] == ')' ||
+				s[j - 1] == '{' ||
+				s[j - 1] == ')' ||)
+			s[j] -= 32;
+	}
+		return (s);
 }
-if (check_separators(s[j] && (s[j + 1] >= 'a' && s[j + 1] <= 'z'))
-{
-s[j + 1] -= 32;
-}
-j++;
-}
-return (s);
-}
-/**
- * check_separators - this are separators
- * @c: character to be inputed
- * Return 1 otherwise 0.
- */
-int check_separators(char c)
-{
-int j = 0;
-
-char separator[13] = {' ', '\t', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}' };
-for (; j < 13; j++)
-{
-if (c == separators[j])
-{
-return (1);
-}
-}
-return (0);
-}
-
