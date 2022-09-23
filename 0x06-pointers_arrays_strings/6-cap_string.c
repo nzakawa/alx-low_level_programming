@@ -1,33 +1,48 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * cap_string - function that capitalizes words of strings
- * @str: string
+ * @s: string
  *
  * Return: 0.
  */
 
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
-	int j = 0;
+int j = 0;
 
-	while (str[j] != '\0')
-	{
-		if (str[0] <= 122 && str[0] >= 97)
-		{
-			str[0] = str[0] - 32;
-		}
-		if (str[j] == 32 || str[j] == 46 || str[j] == '\t' || 
-				str[j] == '\n' || str[j] == 44 || str[j] == 59 || 
-				str[j] == '!' || str[j] == '?' || str[j] == '(' || 
-				str[j] == ')' || str[j] == '{' || str[j] == '}')
-		{
-			if (str[j + 1] <= 122 && str[j + 1] >= 97)
-			{
-				str[j + 1] = str[j + 1] - 32;
-			}
-		}
-		j++;
-	}
-	return (s);
+while (s[j])
+{
+if (j == 0 && ([j] >= 'a' && s[j] <= 'z'))
+{
+s[j] -= 32;
 }
+if (check_separators(s[j] && (s[j + 1] >= 'a' && s[j + 1] <= 'z'))
+{
+s[j + 1] -= 32;
+}
+j++;
+}
+return (s);
+}
+/**
+ * check_separators - this are separators
+ * @c: character to be inputed
+ * Return 1 otherwise 0.
+ */
+int check_separators(char c)
+{
+int j = 0;
+
+char separator[13] = {' ', '\t', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}' };
+for (; j <= 13; j++)
+{
+if (c == separators[j])
+{
+return (1);
+}
+}
+return (0);
+}
+
