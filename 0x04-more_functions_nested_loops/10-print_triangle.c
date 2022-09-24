@@ -8,19 +8,18 @@
 
 void print_triangle(int size)
 {
-	int i = 1;
-	int m;
+	int i = 1, m;
 
-	while (i <= size && size - 1)
+	while (i <= size && size > 0)
 	{
 		m = 0;
-		while (m < size - 1)
+		while (m < size - i)
 		{
 			_putchar(' ');
-			m++
+			m++;
 		}
 		m = 0;
-		while (m < 1)
+		while (m < i)
 		{
 			_putchar('#');
 			m++;
