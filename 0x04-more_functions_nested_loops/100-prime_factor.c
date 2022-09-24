@@ -8,27 +8,17 @@
 
 int main(void)
 {
-	long int n, m, i;
+	unsigned int long n = 612852475143, j = (int) sqrt(n);
 
-	n = 612852475143;
-	m = -1;
-
-	while (n % 2 == 0)
+	while (1)
 	{
-		m = 2;
-		n /= 2;
-	}
-	for (i = 3; i <= sqrt(n); i = 1 + 2)
-	{
-		while (n % i == 0)
+		if (n % j == 0)
 		{
-			m = i;
-			n = n / i;
+			print("%lu \n", n / j);
+			break;
 		}
+		j--;
 	}
-	if (n > 2)
-		m = n;
-	printf("%ld\n", m);
 
 	return (0);
 }
