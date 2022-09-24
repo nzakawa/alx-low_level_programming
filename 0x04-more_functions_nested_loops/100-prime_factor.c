@@ -8,9 +8,7 @@
 
 int main(void)
 {
-	long int n,
-	long int m,
-	long int i;
+	long int n, m, i;
 
 	n = 612852475143;
 	m = -1;
