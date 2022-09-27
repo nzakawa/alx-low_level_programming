@@ -5,6 +5,8 @@
  * @a: matrix of integer.
  * @size: size of the matrix
  */
+
+
 void print_diagsums(int *a, int size)
 {
 	int j, sum1 = 0, sum2 = 0;
@@ -15,6 +17,7 @@ void print_diagsums(int *a, int size)
 		sum2 += a[size - j];
 		a += size;
 	}
+
 
 
 }
