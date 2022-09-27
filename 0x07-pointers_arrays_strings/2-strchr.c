@@ -10,19 +10,12 @@
 
 char *_strchr(char *s, char c)
 {
-	int j = 0, k;
+int j;
 
-	while (s[j])
-	{
-		j++;
-	}
-	for (k = 0; k <= j; k++)
-	{
-		if (c == s[c])
-		{
-			s += k;
-			return (s);
-		}
-	}
-	return ('\0');
+for (j = 0; s[j] >= '\0'; j++)
+{
+if (s[j] == c)
+return (s + j);
+}
+return ('\0');
 }
