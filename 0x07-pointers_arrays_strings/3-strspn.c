@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strpbrk - search a string for a set of bytes
+ * _strspn - search a string for a set of bytes
  * @s: source string
  * @accept: string to be accepted
  *
@@ -9,20 +9,22 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int j = 0, k, l = 0;
+	unsigned int bytes = 0;
+	int j;
 
-	while (accept[j])
+	while (*s)
 	{
-		k = 0;
-		while (s[k] != 32)
+		for (j = 0; accept[j]; j++)
 		{
-			if (accept[j] == s[k])
+			if (*s == accept[j])
 			{
-				l++;
+				bytes++;
+				break;
 			}
-			k++;
+			else if (accept[j + 1] == '\0')
+				return (bytes);
 		}
-		j++;
+		s++;
 	}
-	return (l);
+	return (bytes);
 }
