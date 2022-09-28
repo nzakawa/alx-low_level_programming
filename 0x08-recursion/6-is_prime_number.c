@@ -2,8 +2,8 @@
 
 /**
  * evaluate_number - evaluate if the number is prime
- *@n: integer
- *@m: prime number
+ * @n: integer
+ * @m: prime number
  * Return: 1 if prime, 0 if not
  */
 int evaluate_number(int n, int m)
