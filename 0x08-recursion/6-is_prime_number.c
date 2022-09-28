@@ -17,7 +17,7 @@ int evaluate_number(int n, int m)
 }
 
 /**
- * int is_prime_number - indicate if the number is prime
+ * is_prime_number - indicate if the number is prime
  * @n: integer
  *
  * Return: 1 if prime, 0 if not
