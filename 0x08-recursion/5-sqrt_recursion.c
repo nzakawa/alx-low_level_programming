@@ -10,7 +10,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * _sqrt_recursion - function that finds square root of a n
+ * square - function that finds square root of a n
  * @n: integer
  * @m: square value
  * Return: integer
