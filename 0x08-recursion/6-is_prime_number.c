@@ -13,7 +13,7 @@ int evaluate_number(int n, int m)
 	else if (n > m / 2)
 		return (1);
 	else
-		return (evaluate_number(f + 1, m));
+		return (evaluate_number(n + 1, m));
 }
 
 /**
