@@ -11,8 +11,7 @@ int str_recursion(char *s)
 	if (*s == '\0')
 		return (0);
 	else
-		return
-			return (1 + str_recursion(s + 1));
+		return (1 + str_recursion(s + 1));
 }
 
 /**
