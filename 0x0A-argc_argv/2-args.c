@@ -1,4 +1,4 @@
-#include <stdi0.h>
+#include <stdio.h>
 #include "main.h"
 /**
  * main - prints all arguments it recieves
