@@ -1,7 +1,7 @@
 #include <stdi0.h>
-
+#include "main.h"
 /**
- * main - program that prints all arguments it receives
+ * main - prints all arguments it recieves
  * @argc: argument passed to the function
  * @argv: argument pointers to the string
  *
