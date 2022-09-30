@@ -1,19 +1,17 @@
 #include <stdio.h>
-#include "main.h"
-/**
- * main - prints all arguments it recieves
- * @argc: argument passed to the function
- * @argv: argument pointers to the string
- *
- * Return 0
- */
-int main(int argc, chair const *argv[])
-{
-	int j = 0;
 
-	while (argc--)
+/**
+ * main - this function prints name
+ * @argc: argument to number
+ * @argv: argument array
+ */
+int main(int argc, char *argv[])
+{
+	int j;
+
+	for (j = 0; j < argc; j++)
 	{
 		printf("%s\n", argv[j]);
-		j++;
 	}
+	return (0);
 }
