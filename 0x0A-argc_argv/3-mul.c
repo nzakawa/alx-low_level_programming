@@ -5,10 +5,11 @@
  * main - Oprint the result of the multiplication, followed by a new line
  * @argc: integer
  * @argv: string pointer
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
-	int ans = 0, n1, n2;
+	int ans, n1, n2;
 
 	if (argc != 3)
 	{
@@ -17,4 +18,8 @@ int main(int argc, char *argv[])
 	}
 	n1 = argv[1];
 	n2 = argv[2];
+	ans = n1 * n2;
+
+	printf("%d\n", ans);
+	return (0);
 }
