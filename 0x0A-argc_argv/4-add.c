@@ -11,32 +11,28 @@
  */
 int main(int argc, char *argv[])
 {
-	int n, m, len, sum;
-	char *p;
+	int j = 0;
+	int total = 0;
 
-	if (argc < 2)
-		printf("\0");
+	if (argc == 1)
+	{
+		printf("0\n");
+	}
 	else
 	{
-		sum = 0;
-		for (n = 1; n < argc; n++)
+		for (j = 1; j < argc; j++)
 		{
-			p = argv[n];
-			len = strlen(p);
-
-			for (m = 0; m < len; m++)
+			if (!isdigit(*argv[j]))
 			{
-				if (isdigit(*(p + m)) == 0)
-				{
-					printf("Error\n");
-					return (1);
-				}
+				printf("Error\n");
 			}
-
-			sum += atoi(argv[n]);
+			else
+			{
+				total += atoi(argv[j]);
+			}
 		}
-
-		printf("%d\n", sum);
+		printf("%d\n", total)
 	}
+
 	return (0);
 }
