@@ -5,7 +5,7 @@
  * @argc: argument to number
  * @argv: argument array
  */
-int main(int argc, char *argv[])
+int main(int argc, char const argv[])
 {
 	int j;
 
