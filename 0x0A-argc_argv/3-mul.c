@@ -15,9 +15,9 @@ int main(int argc, char const *argv[])
 
 if (argc != 3)
 {
-	print("Erro\n");
+	printf("Error\n");
 	return (1);
 }
-print("%\n", atoi(argv[1]) * atoi(argv[2]));
+printf("%\n", atoi(argv[1]) * atoi(argv[2]));
 return (0);
 }
