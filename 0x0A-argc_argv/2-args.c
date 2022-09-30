@@ -6,7 +6,7 @@
  * @argv: argument array
  * Return: 0
  */
-int main(int argc, char const argv[])
+int main(int argc, char *argv[])
 {
 	int j;
 
@@ -14,5 +14,6 @@ int main(int argc, char const argv[])
 	{
 		printf("%s\n", argv[j]);
 	}
+
 	return (0);
 }
