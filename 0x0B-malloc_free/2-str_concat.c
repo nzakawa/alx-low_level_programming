@@ -16,9 +16,9 @@ char *str_concat(char *s1, char *s2)
 
 	q = "";
 	if (s1 == NULL)
-		s1 = "";
+		s1 = q;
 	if (s2 == NULL)
-		s2 = "";
+		s2 = q;
 	i = k = l = 0;
 	while (s1[k] != '\0')
 	{
@@ -38,6 +38,7 @@ char *str_concat(char *s1, char *s2)
 		p[i] = s1[i];
 		i++;
 	}
+	j = 0;
 	while (j <= l)
 	{
 		p[i] = s2[j];
@@ -45,3 +46,4 @@ char *str_concat(char *s1, char *s2)
 		j++;
 	}
 	return (p);
+}
