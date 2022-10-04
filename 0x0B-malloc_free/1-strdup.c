@@ -24,7 +24,7 @@ char *_strdup(char *str)
 		return (NULL);
 	ptr = j;
 	while (*str)
-		*ptr++ + *str++;
+		*ptr++ = *str++;
 	*ptr = 0;
 	return (j);
 }
