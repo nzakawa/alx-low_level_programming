@@ -31,12 +31,12 @@ char **strtow(char *str)
 		{
 			for (p = str, i = 0; *p != ' ' && *p != 0;)
 				i++, p++;
-			q[i] = malloc(i + 1);
+			q[j] = malloc(i + 1);
 			if (q[j] == 0)
 			{
-				while (j > 0)
+				while (j >= 0)
 					free(q[--j]);
-				free(p);
+				free(q);
 				return (0);
 			}
 			p = q[j++];
