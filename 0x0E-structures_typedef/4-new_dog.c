@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "dog.h"
 /**
  * new_dog - create new dog
@@ -36,7 +37,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (new_dog->owner == NULL)
 	{
 		free(new_dog->name);
-		free(dog);
+		free(new_dog);
 		return (NULL);
 	}
 	for (j = 0; j < k; j++)
