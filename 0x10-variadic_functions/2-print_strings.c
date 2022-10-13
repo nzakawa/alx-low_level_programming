@@ -7,7 +7,7 @@
  * @separator: item to use to separate the numbers
  * @n: number of argument
  *
- * Return: sum of all argument
+ * Return: void
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
