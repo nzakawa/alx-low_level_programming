@@ -65,7 +65,7 @@ void print_s(va_list list)
 void print_all(const char * const format, ...)
 {
 	unsigned int i, j;
-	va_list list;
+	va_list all;
 	char *separator = "";
 
 	f p[] = {
@@ -75,7 +75,7 @@ void print_all(const char * const format, ...)
 		{"s", print_s},
 		};
 
-	va_start(list, format);
+	va_start(all, format);
 	i = 0;
 	while (format && format[i])
 	{
@@ -85,7 +85,7 @@ void print_all(const char * const format, ...)
 			if (p[j].p[0] == format[i])
 			{
 				printf("%s", separator);
-				p[j].f(list);
+				p[j].f(all);
 				separator = ", ";
 				break;
 			}
@@ -96,7 +96,7 @@ void print_all(const char * const format, ...)
 	}
 
 	printf("\n");
-	va_end(list);
+	va_end(all);
 }
 
 
