@@ -68,7 +68,7 @@ void print_all(const char * const format, ...)
 	va_list list;
 	char *separator = "";
 
-	print_t p[] = {
+	f p[] = {
 		{"c", print_c},
 		{"i", print_i},
 		{"f", print_f},
@@ -82,7 +82,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (j < 4)
 		{
-			if (p[j].t[0] == format[i])
+			if (p[j].print[0] == format[i])
 			{
 				printf("%s", separator);
 				separator = ", ";
