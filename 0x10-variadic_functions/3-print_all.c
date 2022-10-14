@@ -4,11 +4,11 @@
 
 /**
  * print_c - prints a char
- * @list: name va_list
+ * @c: name va_list
  *
  * Return: void
  */
-void print_c(va_list list)
+void print_c(va_list c)
 {
 	printf("%c", va_arg(list, int));
 }
@@ -82,16 +82,17 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (j < 4)
 		{
-			if (p[j].print[0] == format[i])
+			if (p[j].p[0] == format[i])
 			{
 				printf("%s", separator);
-				separator = ", ";
 				p[j].f(list);
+				separator = ", ";
 				break;
 			}
 			j++;
 		}
-		i++;
+
+	i++;
 	}
 
 	printf("\n");
