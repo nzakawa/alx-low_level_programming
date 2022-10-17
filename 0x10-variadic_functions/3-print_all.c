@@ -67,7 +67,6 @@ void print_all(const char * const format, ...)
 	unsigned int i, j;
 	va_list list;
 	char *separator = "";
-
 	print_t p[] = {
 		{"c", print_c},
 		{"i", print_i},
