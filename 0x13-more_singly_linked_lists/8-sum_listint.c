@@ -9,12 +9,17 @@
  */
 int sum_listint(listint_t *head);
 {
-	int j = 0;
+	listint_t *ptr;
+	int sum;
 
-	while (head != NULL)
+	if (head == NULL)
+		return (0);
+
+	ptr = head;
+	while (ptr != NULL)
 	{
-		j += head->n;
-		head = head->next;
+		sum += ptr->n;
+		ptr = ptr->next;
 	}
-	return (j);
+	return (sum);
 }
