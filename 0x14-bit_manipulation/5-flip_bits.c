@@ -19,7 +19,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	{
 		if (check == (xorval & check))
 			count++;
-		check << = 1;
+		check <<= 1;
 	}
 	return (count);
 }
